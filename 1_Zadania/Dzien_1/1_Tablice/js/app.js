@@ -83,3 +83,13 @@ console.log("--------------------> Z a d a n i e 5  <---------------");
     console.log(getEvenAvarage([2,8,3,7,4]));
 
     console.log("--------------------> Z a d a n i e 6  <---------------");
+
+    function sortArray(array) {
+        var sortArr = array.sort(function(a, b) {
+            return a - b;
+        });
+        return sortArr
+    };
+    console.log(sortArray([23, 43, 56, 76, 12, 3, 5, 9, 77]));
+
+    console.log("--------------------> Z a d a n i e 7  <---------------");
