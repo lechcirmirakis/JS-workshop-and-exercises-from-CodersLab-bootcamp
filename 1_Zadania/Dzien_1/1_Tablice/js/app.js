@@ -93,3 +93,16 @@ console.log("--------------------> Z a d a n i e 5  <---------------");
     console.log(sortArray([23, 43, 56, 76, 12, 3, 5, 9, 77]));
 
     console.log("--------------------> Z a d a n i e 7  <---------------");
+    // nie zrobione do końca
+    function addArrays(array1, array2) {
+        var array3 = [];
+        for (var i = 0; i < array1.length; i++) {
+            for (var j = i; j < array2.length; j++) {
+                array3.push(array1[i] + array2[j])
+            }
+
+        }
+        return array3
+    }
+
+    console.log(addArrays([1, 2,], [1, 2,]));
