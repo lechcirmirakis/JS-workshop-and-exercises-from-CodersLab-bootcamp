@@ -29,6 +29,7 @@ console.log(distFromAvarage([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 console.log("--------------------> Z a d a n i e 1  <---------------");
 
     var fruits = ["apple", "banan", "orange", "lemon", "strawberry"];
+
     console.log("dlugosć tablicy to: " + fruits.length);
     console.log("ostatni element tablicy: " + fruits[4]);
 
@@ -59,3 +60,26 @@ console.log("--------------------> Z a d a n i e 4  <---------------");
     console.log(multiply([1, 2, 3, 4, 5]));
 
 console.log("--------------------> Z a d a n i e 5  <---------------");
+
+    function getEvenAvarage(array) {
+        var evenArr = [];
+        var sumEvenArr = 0;
+        for (var i = 0; i < array.length; i++) {
+            if (array[i] % 2 ===0) {
+                evenArr.push(array[i]);
+            }
+        }
+        for (var i = 0; i < evenArr.length; i++) {
+            sumEvenArr += evenArr[i];
+        }
+
+        if (sumEvenArr === 0) {
+            return null
+        }
+        else {
+            return Math.round(sumEvenArr / evenArr.length)
+        }
+    }
+    console.log(getEvenAvarage([2,8,3,7,4]));
+
+    console.log("--------------------> Z a d a n i e 6  <---------------");
