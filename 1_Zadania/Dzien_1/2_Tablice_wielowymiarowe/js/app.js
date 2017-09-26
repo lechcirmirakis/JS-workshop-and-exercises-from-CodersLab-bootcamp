@@ -62,7 +62,7 @@ var array2d = [
 
 print2DArray([array2d]);
 
-console.log("--------------------> Z a d a n i e 4  <---------------");
+console.log("--------------------> Z a d a n i e 5  <---------------");
 // nie skonczone
 function create2DArray(rows, cols) {
     var arr = [];
