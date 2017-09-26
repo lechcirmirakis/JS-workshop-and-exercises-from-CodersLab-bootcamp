@@ -31,23 +31,25 @@ console.log("--------------------> Z a d a n i e 2  <---------------");
     }
 
     for (var i = 0; i < task2Array.length; i++) {
-        for (var j = 0; j < task2Array.length; j++) {
+        for (var j = 0; j < task2Array[i].length; j++) {
             console.log(task2Array[i][j]);
         }
     }
 
 console.log("--------------------> Z a d a n i e 3  <---------------");
 
-    // function print2DArray(array) {
-    //     var arraySum = [];
-    //     for (var i = 0; i < array.length; i++) {
-    //         for (var j = 0; j < array.length; j++) {
-    //             console.log(array[i][j]);
-    //         }
-    //     }
-    // }
-    //
-    // console.log(print2DArray([
-    //     [1, 2, 3],
-    //     [4, 5, 6],
-    // ]));
+    function print2DArray(array) {
+        for(var i = 0; i < array.length; i++) {
+                for(var j = 0; j < array[i].length; j++) {
+                    console.log(array[i][j]);
+                }
+        }
+    }
+    print2DArray([
+        ["Mistrzem", "Polski", "Jest", "Legia", " "],
+        ["Legia", "Najlepsza", "Jest",],
+        ["Legia", "To", "Jest", "Potega"],
+        ["Legia", "CWKS", ":)"]
+    ]);
+
+console.log("--------------------> Z a d a n i e 4  <---------------");
