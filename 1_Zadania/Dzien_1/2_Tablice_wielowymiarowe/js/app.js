@@ -53,3 +53,51 @@ console.log("--------------------> Z a d a n i e 3  <---------------");
     ]);
 
 console.log("--------------------> Z a d a n i e 4  <---------------");
+
+var array2d = [
+    [2, 2, 3, 3],
+    [4, 5, 7, 12, 12, 13],
+    [43, 43, 23, 23,]
+]
+
+print2DArray([array2d]);
+
+console.log("--------------------> Z a d a n i e 4  <---------------");
+// nie skonczone
+function create2DArray(rows, cols) {
+    var arr = [];
+    for (var i = 0; i < rows; i++) {
+        arr.push([rows[i]]);
+        arr[i].push(new Array(cols));
+        for (var j = 0; j < cols; j++) {
+        }
+    }
+    return arr;
+}
+console.log(create2DArray(4, 4));
+
+console.log("--------------------> Z a d a n i e 0 z wykladowca  <---------------");
+
+    function checkArray(array) {
+        var check = [];
+        for (var i = 0; i < array.length; i++) {
+            for (var j = 0; j < array[i].length; j++) {
+                if (array[i][0] % 2 !== 0 || array[j][1] % 2 !== 0) {
+                    check.push(false);
+                }
+                else {
+                    check.push(true);
+                }
+            }
+        }
+
+        return check
+    }
+
+    console.log(checkArray([
+                            [11, 12],
+                            [42, 2],
+                            [-4, -120],
+                            [0, 0],
+                            [1, 34],
+                            ]));
