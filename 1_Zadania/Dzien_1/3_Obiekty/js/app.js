@@ -151,3 +151,52 @@ console.log("--------------------> Z a d a n i e 7 <---------------");
     console.log(recta2.getPerimiter());
 
 console.log("--------------------> Z a d a n i e 10 <---------------");
+
+    var Calculator = function() {
+        this.history = [ ];
+    }
+
+    Calculator.prototype.add = function (num1, num2) {
+        var result = num1+num2;
+        console.log("wynik dodawania: "+result);
+        this.history.push("added "+ num1+ " to "+ num2+ " got "+ result);
+    };
+
+    Calculator.prototype.multiply = function (num1, num2) {
+        var result = num1*num2;
+        console.log("wynik monożenia: "+result);
+        this.history.push("multiplied "+ num1+ " wiht "+ num2+ " got "+ result);
+    };
+
+    Calculator.prototype.subtract = function (num1, num2) {
+        var result = num1-num2;
+        console.log("wynik odejmowania: "+result);
+        this.history.push("subtracted "+ num1+ " from "+ num2+ " got "+ result);
+    };
+
+    Calculator.prototype.divide = function (num1, num2) {
+        var result = num1/num2;
+        console.log("wynik dzielenia: "+result);
+        this.history.push("divided "+ num1+ " by "+ num2+ " got "+ result);
+    };
+
+    Calculator.prototype.printOperations = function() {
+        var hist = this.history;
+        for (var i = 0; i < hist.length; i++) {
+            console.log(hist[i]);
+        }
+    };
+
+    Calculator.prototype.clearOperations = function() {
+        this.history.length = 0
+    };
+
+    var calc = new Calculator();
+    console.log(calc.add(2,3));
+    console.log(calc.multiply(2,2));
+    console.log(calc.subtract(10,5));
+    console.log(calc.divide(100,2));
+    console.log(calc.history);
+    console.log(calc.printOperations());
+    console.log(calc.clearOperations());
+    console.log(calc.history);
