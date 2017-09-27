@@ -1,11 +1,25 @@
 console.log("--------------------> Z a d a n i e 1 z wykl <---------------");
 
-// String.prototype.upperLower = function () {
-//     var newStr = "";
+// String.prototype.upperLower = function() {
+//     var newString = "";
 //     for (var i = 0; i < this.length; i++) {
-//         i
+//         c = this[i]
+//         if (c.indexof == 0) {
+//             newString = c.toUpperCase();
+//         }
+//         else {
+//             newString = c.toLowerCase();
+//         }
 //     }
+//     return newString
 // };
+
+// var str = new String("LEGIA WARSZAWA");
+// console.log(str);
+// console.log(str.upperLower());
+
+
+console.log();
 
 console.log("--------------------> Z a d a n i e 1 <---------------");
 
