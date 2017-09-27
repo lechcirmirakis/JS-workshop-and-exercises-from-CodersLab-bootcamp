@@ -93,16 +93,30 @@ console.log("--------------------> Z a d a n i e 5  <---------------");
     console.log(sortArray([23, 43, 56, 76, 12, 3, 5, 9, 77]));
 
     console.log("--------------------> Z a d a n i e 7  <---------------");
-    // nie zrobione do końca
-    function addArrays(array1, array2) {
-        var array3 = [];
-        for (var i = 0; i < array1.length; i++) {
-            for (var j = i; j < array2.length; j++) {
-                array3.push(array1[i] + array2[j])
-            }
+    // nie zrobione do
 
-        }
-        return array3
+    function addArray (array1, array2) {
+    var newArray = [];
+    if (array1.length>=array2.length)  {
+        var longest=array1.length
+    } else {
+        longest=array2.length
     }
+    console.log(longest);
 
-    console.log(addArrays([1, 2,], [1, 2,]));
+        for (var i=0; i<longest; i++) {
+
+            if (( typeof array1[i] === "undefined") && (typeof array2[i] !== "undefined")) {
+                // console.log(array1[i]);
+                newArray.push(array2[i])
+            }else if(( typeof array2[i] === "undefined") && (typeof array1[i] !== "undefined")) {
+                // console.log(arr1[i]);
+                newArray.push(array1[i])
+            } else {
+                newArray.push(array1[i]+array2[i])
+            }
+        }
+        return newArray
+}
+
+console.log(addArray([8,2,4,60,5],[1,2,3,4,5,6]))

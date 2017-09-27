@@ -1,8 +1,10 @@
 console.log("--------------------> Z a d a n i e 1 z wykl <---------------");
 
 // String.prototype.upperLower = function () {
-//
-//
+//     var newStr = "";
+//     for (var i = 0; i < this.length; i++) {
+//         i
+//     }
 // };
 
 console.log("--------------------> Z a d a n i e 1 <---------------");
