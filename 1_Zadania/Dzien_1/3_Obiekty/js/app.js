@@ -125,3 +125,29 @@ console.log("--------------------> Z a d a n i e 7 <---------------");
     // wyoknane w pliku js/zadanie03.js
 
     console.log("--------------------> Z a d a n i e 9 <---------------");
+
+    var Rectangle = function(a, b) {
+        this.width = a;
+        this.height = b;
+        this.getArea = function () {
+            console.log("Pole powierzchni prostokąta to: "+this.width*this.height+" cm2");
+        };
+        this.getPerimiter = function () {
+            console.log("Obwód prostokąta to: "+(this.width*2+this.height*2)+" cm");
+        };
+    }
+    var recta = Object.create(Rectangle);
+
+    console.log(recta.hasOwnProperty("getArea"));
+        // wyswietla false gdyż metoda getArea jest stworzona tylko dla prototypu,
+        // Object.create jej nie powiela
+
+        // Twrze wiec kolejny obiekt za pomocą "zwyklej metody"
+    var recta2 = new Rectangle(5,3);
+    console.log(recta2.hasOwnProperty("getArea"));
+        // dopiero teraz pokazuje true i moge uzyc tych metod
+
+    console.log(recta2.getArea());
+    console.log(recta2.getPerimiter());
+
+console.log("--------------------> Z a d a n i e 10 <---------------");
