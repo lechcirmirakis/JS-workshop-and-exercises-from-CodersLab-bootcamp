@@ -85,3 +85,37 @@ console.log("--------------------> Z a d a n i e 5 <---------------");
     bmw.showData();
 
 console.log("--------------------> Z a d a n i e 6 <---------------");
+
+    var bird = {
+        type: "wrobelek",
+        name: "Ćwirek",
+        getType: function() {
+            console.log("to jest ptak o imieniu "+this.name+", ptak ten to "+this.type);
+        }
+    }
+    bird.getType();
+    console.log(bird instanceof Object);
+
+    // obiekt bird jest instancja obiektu Object
+
+console.log("--------------------> Z a d a n i e 7 <---------------");
+
+    var myString = "You`ll Never Walk Alone";
+    console.log(myString instanceof Object); // false
+    console.log(myString instanceof String); // false
+    var myString = new String("You`ll Never Walk Alone");
+    console.log(myString instanceof Object); // true
+    console.log(myString instanceof String); // true
+
+    var myNumber = 349;
+    console.log(myNumber instanceof Object); // false
+    console.log(myNumber instanceof String); // false
+    console.log(myNumber instanceof Number); // false
+    var myNumber = new Number(349);
+    console.log(myNumber instanceof Object); // true
+    console.log(myNumber instanceof String); // false
+    console.log(myNumber instanceof Number); // true
+
+    /* typy podstawowe nie sa obiektami wiec nie sa tez instancjami Object,
+    String itp. dopiero po stworzeniu z nich obiektow, staja sie instancjami np
+    Object, String, Number */
