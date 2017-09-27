@@ -18,3 +18,15 @@ console.log(book.author);
 console.log(book.numberOfPages);
 
 console.log("--------------------> Z a d a n i e 2 <---------------");
+
+var person = {
+    name: "John",
+    age: 34,
+    sayHello: function() {
+        console.log("hello my name is "+this.name);
+    }
+}
+
+console.log(person.name);
+console.log(person.age);
+person.sayHello();
