@@ -43,6 +43,7 @@ console.log("--------------------> Z a d a n i e 3 <---------------");
 
 console.log("--------------------> Z a d a n i e 4 <---------------");
 
+    // konstruktor Car
     function Car(CarBrand, CarColor, CarNumberOfKilometers) {
         this.brand = CarBrand;
         this.color = CarColor;
@@ -54,13 +55,33 @@ console.log("--------------------> Z a d a n i e 4 <---------------");
             this.NumberOfKilometers+=km
         }
     }
-
+    // Nowy obiekt na bazie konstruktora Car
     var mercedes = new Car("Mercedes", "czarny", 0);
     console.log(mercedes.printCarinfo());
     mercedes.drive(20);
     console.log(mercedes.printCarinfo());
-
+    // Nowy obiekt na bazie konstruktora Car
     var bmw = new Car("Bmw", "czerwone", 220);
     console.log(bmw.printCarinfo());
     bmw.drive(20);
     console.log(bmw.printCarinfo());
+
+console.log("--------------------> Z a d a n i e 5 <---------------");
+
+    // dodaje tablice przegladami do obiektu bmw
+    bmw.przeglad = ["17.10.2014", "18.10.2015", "19.10.2016"];
+    console.log(bmw.przeglad);
+
+    // metoda-funkcja dodajaca date do tablicy z przegladami
+    bmw.addData = function (date) {
+        this.przeglad.push(date);
+    }
+    bmw.addData("20.10.2017");
+    console.log(bmw.przeglad[1]);
+
+    bmw.showData = function() {
+        console.log("Wszystkie daty przegladów Twojego BMW: "+bmw.przeglad);
+    }
+    bmw.showData();
+
+console.log("--------------------> Z a d a n i e 6 <---------------");
