@@ -4,21 +4,22 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+// Tworze funkcje sortArray która będzie miała w sobie kolejne funkcje
 function sortArray() {
 
-    //Twoj komentarz ...
+    //Tworze tablice z różnymi liczbami które będą sortowane (zmienna lokalna)
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    //Funkcja wyższego rzedu (sort) sortuje podaną tablice, i jako argument przyjmuje drugą funkcje
     points.sort(function(a, b){
-        //Twoj komentarz ...
+        //Funkcja zwraca nam posortowane elementy danej tablicy od najmniejszego do najwiekszego (alfabetycznie)
         return a-b;
     });
 
-    //Twoj komentarz ...
+    //Funkcja sort zwraca posortowaną tablice
     return points;
 }
 
-//Twoj komentarz ...
+//Wywołujemy funkcje sortująca tablice
 sortArray();
+console.log(sortArray());
