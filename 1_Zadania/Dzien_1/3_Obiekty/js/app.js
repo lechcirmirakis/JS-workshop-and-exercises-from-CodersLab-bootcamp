@@ -119,3 +119,9 @@ console.log("--------------------> Z a d a n i e 7 <---------------");
     /* typy podstawowe nie sa obiektami wiec nie sa tez instancjami Object,
     String itp. dopiero po stworzeniu z nich obiektow, staja sie instancjami np
     Object, String, Number */
+
+    console.log("--------------------> Z a d a n i e 8 <---------------");
+
+    // wyoknane w pliku js/zadanie03.js
+
+    console.log("--------------------> Z a d a n i e 9 <---------------");
