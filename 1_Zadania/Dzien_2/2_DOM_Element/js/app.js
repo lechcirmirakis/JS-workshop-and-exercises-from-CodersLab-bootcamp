@@ -86,5 +86,22 @@ console.log("--------------------> Z a d a n i e 5  <---------------");
     };
     console.log(getClassInfo(banner));
 
+console.log("--------------------> Z a d a n i e 6  <---------------");
+
+    var navLi = document.querySelectorAll('nav li');
+    console.log(navLi);
+
+    function setDataDirection(elements) {
+        for (var i = 0; i < elements.length; i++) {
+            if (typeof elements[i].dataset.direction === "undefined") {
+                elements[i].dataset.direction = "top"
+            }
+        }
+    };
+
+    for (var i = 0; i < navLi.length; i++) {
+        console.log(navLi[i]);
+    }
+    setDataDirection(navLi);
 
 });
