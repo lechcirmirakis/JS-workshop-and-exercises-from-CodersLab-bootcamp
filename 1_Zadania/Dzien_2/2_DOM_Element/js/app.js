@@ -44,7 +44,16 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
 
     console.log("--------------------> Z a d a n i e 2  <---------------");
 
+    for (var i = 0; i < blocks.length; i++) {
+        console.log(blocks[i].innerHTML); // zwraca kod html znajdujacy sie w szukanym elemencie
+        console.log(blocks[i].outerHTML); // zwraca kod html znajdujacy sie w szukanym elemencie wraz z tagiem tego elementu
+    }
 
+
+        for (var i = 0; i < blocks.length; i++) {
+            console.log(blocks[i].innerHTML = ("<h2>Nowa wartość diva o klasie blocks</h2>")); // zmienil sie cały kod (wraz z tagami) zawierajacy sie w danym elemencie
+            console.log(blocks[i].outerHTML);
+        }
 
 
 
