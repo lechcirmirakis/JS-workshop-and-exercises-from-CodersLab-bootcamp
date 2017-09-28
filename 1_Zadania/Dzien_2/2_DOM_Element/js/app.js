@@ -67,5 +67,15 @@ console.log("--------------------> Z a d a n i e 3  <---------------");
 
 console.log("--------------------> Z a d a n i e 4  <---------------");
 
+    function getTags(elements) {
+        var tagsName = [];
+        for (var i = 0; i < elements.length; i++) {
+            tagsName.push(elements[i].tagName)
+        }
+        return tagsName
+    };
 
+    console.log(getTags(childElements));
+
+console.log("--------------------> Z a d a n i e 5  <---------------");
 });
