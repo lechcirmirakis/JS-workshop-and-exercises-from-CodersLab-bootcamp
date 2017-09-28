@@ -70,7 +70,7 @@ console.log("--------------------> Z a d a n i e 4  <---------------");
     function getTags(elements) {
         var tagsName = [];
         for (var i = 0; i < elements.length; i++) {
-            tagsName.push(elements[i].tagName)
+            tagsName.push(elements[i].tagName);
         }
         return tagsName
     };
@@ -78,4 +78,13 @@ console.log("--------------------> Z a d a n i e 4  <---------------");
     console.log(getTags(childElements));
 
 console.log("--------------------> Z a d a n i e 5  <---------------");
+
+    function getClassInfo(element) {
+        var classNames = [];
+        classNames.push(element.className);
+        return classNames
+    };
+    console.log(getClassInfo(banner));
+
+
 });
