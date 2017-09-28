@@ -15,6 +15,20 @@ console.log("--------------------> Z a d a n i e 1  <---------------");
 
 console.log("--------------------> Z a d a n i e 2  <---------------");
 
+    var navLi = document.querySelectorAll('nav li');
+    console.log(navLi);
+    console.log(navLi.length);
+
+    var divp = document.querySelectorAll('div p');
+    console.log(divp);
+    console.log(divp.length);
+
+    var articleDivs = document.querySelectorAll('article div');
+    console.log(articleDivs);
+    console.log(articleDivs.length);
+
+console.log("--------------------> Z a d a n i e 3  <---------------");
+
 
 
 
