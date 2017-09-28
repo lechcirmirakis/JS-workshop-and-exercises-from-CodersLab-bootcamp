@@ -25,3 +25,17 @@ console.log("--------------------> Z a d a n i e 3  <---------------");
         },	1000);
     }
     countHello(4);
+
+console.log("--------------------> Z a d a n i e 4  <---------------");
+
+    hello(); // funkcja działa prawidłowo czy wywołamy ją przed zdefiniowaniem czy
+             // po zdefiniowaniu, działa hoisting
+    function hello() {
+        console.log("Hello");
+    }
+
+    witaj(); // funkcja działa tylko w momencie gdy wywołamy ją po zdefiniowanu jako
+             // wyrażenie funkcyjne czyli przypisanie funkcji do zmiennej
+    var witaj = function() {
+        console.log("Witaj!");
+    }
