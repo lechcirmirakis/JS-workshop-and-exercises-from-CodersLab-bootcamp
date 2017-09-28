@@ -19,7 +19,7 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
     };
     console.log(getDatasInfo(links));
 
-    console.log("--------------------> Z a d a n i e 1  <---------------");
+console.log("--------------------> Z a d a n i e 1  <---------------");
 
     console.log(homeElement);
 
@@ -42,7 +42,7 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
         console.log(">>>>> "+links[i].className);
     }
 
-    console.log("--------------------> Z a d a n i e 2  <---------------");
+console.log("--------------------> Z a d a n i e 2  <---------------");
 
     for (var i = 0; i < blocks.length; i++) {
         console.log(blocks[i].innerHTML); // zwraca kod html znajdujacy sie w szukanym elemencie
@@ -50,11 +50,22 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
     }
 
 
-        for (var i = 0; i < blocks.length; i++) {
-            console.log(blocks[i].innerHTML = ("<h2>Nowa wartość diva o klasie blocks</h2>")); // zmienil sie cały kod (wraz z tagami) zawierajacy sie w danym elemencie
-            console.log(blocks[i].outerHTML);
-        }
+    for (var i = 0; i < blocks.length; i++) {
+        console.log(blocks[i].innerHTML = ("<h2>Nowa wartość diva o klasie blocks</h2>")); // zmienil sie cały kod (wraz z tagami) zawierajacy sie w danym elemencie
+        console.log(blocks[i].outerHTML);
+    }
 
+console.log("--------------------> Z a d a n i e 3  <---------------");
+
+    var mainFooter = document.getElementById('mainFooter');
+
+        function getId(element) {
+            console.log(element.id);
+        };
+
+        getId(mainFooter);
+
+console.log("--------------------> Z a d a n i e 4  <---------------");
 
 
 });
