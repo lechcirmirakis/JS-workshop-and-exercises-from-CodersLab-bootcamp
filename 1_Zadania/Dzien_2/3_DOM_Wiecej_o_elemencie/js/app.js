@@ -35,6 +35,41 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
 
     console.log("--------------------> Z a d a n i e 1  <---------------");
 
+    var ex1 = document.querySelector('.ex1:nth-of-type(2)');
+
+
+    // zmieniam szerokość tła dla Chrome
+    var chromeBackground = ex1.querySelector('.chrome');
+    chromeBackground.style.width = "100px";
+
+    // zmieniam tło dla Edge
+    var edgeBackground = ex1.querySelector('.edge');
+    edgeBackground.style.backgroundImage = "url(assets/img/edge.png)";
+
+    // zmieniam tło dla Firefoxa
+    var firefoxBackground = ex1.querySelector('.firefox');
+    firefoxBackground.style.backgroundImage = "url(assets/img/firefox.png)";
+
+    // poprawiam link dla Chrome
+    chromeBackground.nextElementSibling.innerText = "Chrome";
+    chromeBackground.nextElementSibling.setAttribute('target', "_blank");
+
+    // poprawiam link dla edge
+    edgeBackground.nextElementSibling.setAttribute('href', 'https://www.microsoft.com/en-us/windows/microsoft-edge');
+    edgeBackground.nextElementSibling.setAttribute('target', "_blank");
+
+    // poprawiam link dla firefoxa
+    firefoxBackground.nextElementSibling.setAttribute('target', "_blank");
+    firefoxBackground.nextElementSibling.setAttribute('href', 'https://www.mozilla.org/en-US/firefox/?utm_medium=referral&utm_source=firefox-com');
+    firefoxBackground.nextElementSibling.innerText = "Firefox";
+
+    console.log("--------------------> Z a d a n i e 2  <---------------");
+
+
+
+
+
+
 
 
 
