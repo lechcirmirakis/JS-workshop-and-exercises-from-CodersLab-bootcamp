@@ -88,12 +88,21 @@ console.log("--------------------> Z a d a n i e 3  <---------------");
 
 console.log("--------------------> Z a d a n i e 4  <---------------");
 
+    var ex4Li = document.querySelectorAll('.ex4 li');
 
+    // sposób z dataset
+    // var counter = 0;
+    // for (var i = 0; i < ex4Li.length; i++) {
+    //     counter += 1;
+    //     ex4Li[i].dataset.id = counter
+    // }
+    // console.log(ex4Li.dataset);
 
-
-
-
-
-
+    // sposób z setAttribute
+    var counter = 0;
+    for (var i = 0; i < ex4Li.length; i++) {
+        ex4Li[i].setAttribute("data-id", (counter+=1));
+        console.log(ex4Li[i].dataset.id);
+    }
 
 });
