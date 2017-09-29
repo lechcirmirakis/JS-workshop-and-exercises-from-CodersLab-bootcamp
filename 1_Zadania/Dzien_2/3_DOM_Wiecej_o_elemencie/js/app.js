@@ -33,7 +33,7 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
         ex5Li3n[i].style.borderBottom = "3px solid black";
     }
 
-    console.log("--------------------> Z a d a n i e 1  <---------------");
+console.log("--------------------> Z a d a n i e 1  <---------------");
 
     var ex1 = document.querySelector('.ex1:nth-of-type(2)');
 
@@ -63,10 +63,18 @@ console.log("--------------------> Z a d a n i e 1 z wykl  <---------------");
     firefoxBackground.nextElementSibling.setAttribute('href', 'https://www.mozilla.org/en-US/firefox/?utm_medium=referral&utm_source=firefox-com');
     firefoxBackground.nextElementSibling.innerText = "Firefox";
 
-    console.log("--------------------> Z a d a n i e 2  <---------------");
+console.log("--------------------> Z a d a n i e 2  <---------------");
 
+    var name = document.getElementById('name');
+    name.innerText = ('Lech Cirmirakis');
+    var color = document.getElementById('fav_color');
+    color.innerText = ('Błękitny');
+    var meal = document.getElementById('fav_meal');
+    meal.innerText = ('Ryż Smażony z kurczakiem');
 
+console.log("--------------------> Z a d a n i e 3  <---------------");
 
+    
 
 
 
