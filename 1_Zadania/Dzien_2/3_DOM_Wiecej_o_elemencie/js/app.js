@@ -74,7 +74,19 @@ console.log("--------------------> Z a d a n i e 2  <---------------");
 
 console.log("--------------------> Z a d a n i e 3  <---------------");
 
-    
+    var menuUl = document.querySelector('.ex3 ul');
+    menuUl.classList.add('menu');
+
+    var menuLi = document.querySelectorAll('.ex3 li');
+
+    for (var i = 0; i < menuLi.length; i++) {
+        if (menuLi[i].className === "error") {
+            menuLi[i].classList.remove('error');
+        }
+        menuLi[i].classList.add('menuElement');
+    }
+
+console.log("--------------------> Z a d a n i e 4  <---------------");
 
 
 
