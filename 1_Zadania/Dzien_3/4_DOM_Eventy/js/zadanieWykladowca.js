@@ -8,18 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
         child.style.display ='block';
     }
 
-    function hideChildren(event) {
-        var child = this.querySelector('.children');
-        child.style.display = 'none';
-    }
-
     for (var i = 0; i < parent.length; i++) {
         parent[i].addEventListener('mouseover', showChildren);
-        parent[i].addEventListener('mouseout', hideChildren);
+        parent[i].addEventListener('mouseout', function hideChildrenElement(event) {
+            var child = this.querySelector('.children');
+            child.style.display = 'none';
+        });
     }
-
-    // nie skończone
-
-
 
 });
