@@ -8,8 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
         child.style.display ='block';
     }
 
+    function hideChildren(event) {
+        var child = this.querySelector('.children');
+        child.style.display = 'none';
+    }
+
     for (var i = 0; i < parent.length; i++) {
         parent[i].addEventListener('mouseover', showChildren);
+        parent[i].addEventListener('mouseout', hideChildren);
     }
 
     // nie skończone
