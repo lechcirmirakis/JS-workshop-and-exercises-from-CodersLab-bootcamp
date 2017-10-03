@@ -7,8 +7,8 @@
 }
 
 .gallery li img {
-    width: 600px;
-    height: 600px;
+    width: 200px;
+    height: 200px;
 }
 
 .fullScreen {
@@ -27,7 +27,7 @@
 
 .fullScreen img {
     display: block;
-    margin: 50px auto;
-    width: 800px;
-    height: 800px;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
 }
