@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     var button = document.querySelector('a');
-    console.log(button);
     var orderId = document.getElementById('orderId');
     var item = document.getElementById('item');
     var quantity = document.getElementById('quantity');
