@@ -3,7 +3,7 @@
 # JavaScript Workshops from CodersLab bootcamp
 
 - Simple Slider
-- Simpler Gallery
+- Simple Gallery
 - Simple Gallery with filter
 
 and
