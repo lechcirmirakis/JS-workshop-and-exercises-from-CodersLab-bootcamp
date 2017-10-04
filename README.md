@@ -5,7 +5,8 @@
 - Simple Slider
 - Simple Gallery
 - Simple Gallery with filter
+- Simple Drop-Down Menu
 
-and
+  and
 
 # JavaScript exercises repetition
