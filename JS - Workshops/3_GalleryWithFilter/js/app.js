@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     showButton.addEventListener('click', function(event) {
         inputText = input.value
         for (var i = 0; i < images.length; i++) {
-            if (images[i].dataset.tag.indexOf(inputText) != -1) {
+            if (images[i].dataset.tag.indexOf(inputText) != -1 && inputText != "") {
                 images[i].classList.remove('invisible');
             }
         }
