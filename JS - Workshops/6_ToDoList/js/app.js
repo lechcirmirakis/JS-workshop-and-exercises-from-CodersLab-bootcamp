@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // First Condition for Task length value
         if (inputTask.value.length >= 5 && inputTask.value.length <= 100) {
+
+            // delete alert innerText
             alert.innerText = "";
+
             // create new elementos of ul
             var newTask = document.createElement('li');
             var newH2 = document.createElement('h2');
@@ -38,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newTask.appendChild(newButtonDelete);
             newTask.appendChild(newButtonComplete);
             newH2.innerText = inputTask.value;
+            inputTask.value = "";
             newButtonDelete.innerText = "Delete";
 
             // event for Remove Finished Task button
@@ -54,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         else if (inputTask.value.length < 5) {
             alert.innerText = "Your task is too short, it must have a minimum of 5 characters"
         }
+        
         else {
             alert.innerText = "Your task is too long, it must have a maximum of 100 characters"
         }
