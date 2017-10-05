@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var listTask = document.getElementById('taskList');
     var buttonRemoveFinishedTask = document.getElementById('removeFinishedTasksButton');
     var alert = document.querySelector('.alert');
-
-    var counter = 0;
     var countSpan = document.querySelector('.count>span');
+    var counter = 0;
     countSpan.innerText = counter;
 
     // event for Add Task Button
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // delete alert innerText
             alert.innerText = "";
 
-            // create new elementos of ul
+            // create new elements of ul
             var newTask = document.createElement('li');
             var newH2 = document.createElement('h2');
             var newButtonDelete = document.createElement('button');
@@ -65,19 +64,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 var toDeleteTask = listTask.querySelectorAll('li');
                 for (var i = 0; i < toDeleteTask.length; i++) {
                     if (toDeleteTask[i].firstElementChild.className === "complete_h2") {
-                        toDeleteTask[i].parentElement.removeChild(toDeleteTask[i]);    
+                        toDeleteTask[i].parentElement.removeChild(toDeleteTask[i]);
                     }
                 }
             });
         }
-        // First Condition for Task length value
+        // Second Condition for Task length value
         else if (inputTask.value.length < 5) {
             alert.innerText = "Your task is too short, it must have a minimum of 5 characters"
         }
-
+        // Third Condition for Task length value
         else {
             alert.innerText = "Your task is too long, it must have a maximum of 100 characters"
         }
     });
-
 });
