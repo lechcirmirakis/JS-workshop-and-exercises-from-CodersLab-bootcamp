@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             var buttonClose = document.createElement('button');
             buttonClose.classList.add('close');
-            buttonClose.innerText = "Zamknij";
+            buttonClose.innerText = "Close";
             buttonClose.addEventListener('click', function(event) {
                 full.parentElement.removeChild(full);
             });
