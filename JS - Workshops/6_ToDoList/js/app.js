@@ -6,12 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     var buttonRemoveFinishedTask = document.getElementById('removeFinishedTasksButton');
 
     // event for Add Task Button
-    buttonAddTask.addEventListener('click', function(event) {
+    buttonAddTask.addEventListener('click', function() {
         // create new elementos of ul
         var newTask = document.createElement('li');
         var newH2 = document.createElement('h2');
         var newButtonDelete = document.createElement('button');
         var newButtonComplete = document.createElement('button');
+
+        // event for Delete button
+        newButtonDelete.addEventListener('click', function() {
+            this.parentElement.parentElement.removeChild(newTask);
+        });
 
         // event for Complete Button
         newButtonComplete.addEventListener('click', function() {
@@ -20,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         newButtonComplete.innerText = "Complete"
         newButtonComplete.classList.add('Complete_button');
-        
+
         // adds the created elements
         listTask.appendChild(newTask);
         newTask.appendChild(newH2);
@@ -29,6 +34,19 @@ document.addEventListener('DOMContentLoaded', function() {
         newH2.innerText = inputTask.value;
         newButtonDelete.innerText = "Delete";
 
+        // event for Remove Finished Task button
+        removeFinishedTasksButton.addEventListener("click", function() {
+            var toDeleteTask = listTask.querySelectorAll('li');
+            for (var i = 0; i < toDeleteTask.length; i++) {
+                if (toDeleteTask[i].firstElementChild.className === "complete_h2") {
+                    toDeleteTask[i].parentElement.removeChild(toDeleteTask[i]);
+                }
+            }
+        });
+
+
+
     });
+
 
 });
