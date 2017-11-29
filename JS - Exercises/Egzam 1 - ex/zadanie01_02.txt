@@ -12,3 +12,10 @@ zdarzeń	(np.	focus).
 
 
 Zadanie 2, odpowiedź
+
+'DOMContentLoaded' - event zalozony dla calego dokumentu, kod ktory umiescimy wewnatrz tego eventu
+wykona sie dopiero wtedy kiedy cale drzewo DOM zostanie zaladowane.
+
+Jesli bysmy tego nie umiescili, istnieje ryzyko ze skryp JS zacznie sie wykonywac zanim elementy
+drzewa DOM sie zaladuja, moze to spowodowac bledy w dzialaniu (JS bedzie chcial wykonac jakas operacje
+na elemencie ktory jeszcze sie nie zaladowal wiec dla JS on nie istnieje)
