@@ -53,3 +53,6 @@ console.log(getAddressesOfElements(links));
 
 
 // 5 Szukanie tagów dzieci
+
+var children = document.querySelector('.sample_class_3').children
+console.log(getTagsOfElements(children));
