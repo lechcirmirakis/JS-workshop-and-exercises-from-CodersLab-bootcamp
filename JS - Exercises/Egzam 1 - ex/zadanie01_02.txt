@@ -1,0 +1,14 @@
+Zadanie 1, odpowiedź
+
+Propagacja eventów polega na przekazywaniu informacji o zdarzeniach w drzewie DOM.
+
+Event	bubbling
+Jest	to	przekazywanie	danych	w	górę	drzewa	DOM	-	domyślny	rodzaj	propagacji	dla
+większości	zdarzeń.
+
+Event	capturing
+Jest	to	przekazywanie	danych	w	dół	drzewa	DOM	-	opcja	standardowa	dla	niektórych
+zdarzeń	(np.	focus).
+
+
+Zadanie 2, odpowiedź
