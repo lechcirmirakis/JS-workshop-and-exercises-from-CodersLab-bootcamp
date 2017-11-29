@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var button_3 = document.querySelector('#button-3');
   var list = document.querySelector('#shopping-list');
 
-
   button_1.addEventListener('click', function() {
     var newLi = document.createElement('li');
     newLi.innerText = "Chleb";
@@ -18,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   button_3.addEventListener('click', function() {
-    var secondLi = list.children[1];
     if (list.children.length > 2) {
-      var newLi = secondLi.cloneNode(true);
+      var newLi = list.children[1].cloneNode(true);
       list.appendChild(newLi);
     } else {
       console.log("niema czego kopiowac :)");
