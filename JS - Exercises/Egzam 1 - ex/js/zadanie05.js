@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function() {
 
-      div.innerText = this.getAttribute('data-text');
+      div.innerText = this.dataset.text;
 
     });
   }
