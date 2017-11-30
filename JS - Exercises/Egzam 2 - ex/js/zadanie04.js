@@ -23,3 +23,19 @@ function addClass(element) {
 }
 
 console.log(addClass(sample_id));
+
+// 3 Szukanie tekstu:
+
+var child = document.querySelector(".sample_class_2").firstElementChild.children;
+
+function getInnerTextsOfElements(elements) {
+  var tab = [];
+  for (var i = 0; i < elements.length; i++) {
+    tab.push(elements[i].innerText);
+  }
+  return tab
+}
+
+console.log(getInnerTextsOfElements(child));
+
+//
