@@ -8,3 +8,11 @@ ale gdy stworzymy w tej metodzie kolejna funkcje, to this bedzie z powrotem wska
 aby to omina musimy przypisac this do zmiennej, na samym poczatku kodu funkcji, i potem uzywaz tej zmiennej
 
 Zadanie 2, odpowiedź:
+
+== i === sa to operatory przypisania.
+
+== - zwroci true, jesli obie zmienne beda tej samej wartosci, ale moga byc innego typu
+      np 2 == "2"
+
+=== zwroci true tylko wtedy, gdy zmienne sa tej samej wartosci i tego samego typu
+    np 2 === 2 - true 2 === "2" - false
