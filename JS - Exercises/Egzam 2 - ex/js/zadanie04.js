@@ -51,3 +51,16 @@ console.log(getInnerTextsOfElements(child));
   }
 
   console.log(getAddressesOfElements(links));
+
+// 5 szukanie tagow dzieci
+
+  var children = document.querySelector('.sample_class_3').children;
+
+  function changeChildren(elements) {
+    var counter = 0;
+    for (var i = 0; i < elements.length; i++) {
+      counter++
+      elements[i].innerText = "Jestem dzieckiem " + counter;
+    }
+  }
+  changeChildren(children);
