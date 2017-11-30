@@ -1,5 +1,10 @@
 Zadanie 1, odpowiedź:
 
-
+This jest to slowo kluczowe w JS-ie. wskazuje na obiekt w kontekscie ktorego zostala wywolana metoda.
+This w kontekscie globalnym wskazuje na obiekt Window.
+gdy wywołamy this wewnatrz funkcji lub wyrazenia funkcyjnego, this bedzie dalej wskazywac na globalny object Window
+gdy wywolamy this wewnatrz metody w ktorym jest osadzona, w jakims obiekcie, this bedzie wskazywal na ten obiekt
+ale gdy stworzymy w tej metodzie kolejna funkcje, to this bedzie z powrotem wskazywalo na obiekt globalny window
+aby to omina musimy przypisac this do zmiennej, na samym poczatku kodu funkcji, i potem uzywaz tej zmiennej
 
 Zadanie 2, odpowiedź:
