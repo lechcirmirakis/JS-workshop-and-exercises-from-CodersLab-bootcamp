@@ -38,4 +38,16 @@ function getInnerTextsOfElements(elements) {
 
 console.log(getInnerTextsOfElements(child));
 
-//
+// 4 szukanie adresów linków
+
+  var links = document.querySelectorAll('a');
+
+  function getAddressesOfElements(elements) {
+    var tab = [];
+    for (var i = 0; i < elements.length; i++) {
+      tab.push(elements[i].getAttribute('href'));
+    }
+    return tab
+  }
+
+  console.log(getAddressesOfElements(links));
